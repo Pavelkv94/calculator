@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="calc">
+      <div class="calc-display">
+        <input disabled="" type="text" id="display" value="0" name="" placeholder="000000000000000000"
+          class="calc-display-input">
+      </div>
+      <div class="calc-buttons">
+        <table class="calc-table">
+          <tbody>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="clear-btn btn btn-hover-red" id="ce" onclick="audios()">ce</button>
+              </td>
+              <td>
+                <button type="button" class="clear-btn btn btn-hover-red" id="c" onclick="audios()">c</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange" onclick="audioz()">/</button>
+              </td>
+              <td>
+                <button type="button" class=" operator btn btn-hover-orange" onclick="audioz()">*</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn btn-hover-green" id="pi" onclick="audioz()">π</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn-hover-green btn" onclick="audioz()">X<sup>y</sup></button>
+              </td>
+              <td>
+                <button type="button" class=" btn-hover-green btn" id="radical" onclick="audioz()">√</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange" onclick="audioz()">-</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">7</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">8</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">9</button>
+              </td>
+              <td rowspan="2">
+                <button type="button" class="operator btn btn-hover-orange" id="plus" onclick="audioz()">+</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">4</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">5</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">6</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">1</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">2</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">3</button>
+              </td>
+              <td>
+                <button type="button" class=" btn-hover-green btn" id="negative" onclick="audioz()">±</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn" onclick="audioz()">0</button>
+              </td>
+              <td>
+                <button type="button" class="btn  btn-hover-orange" id="decimal" onclick="audioz()">.</button>
+              </td>
+              <td colspan="2">
+                <button type="button" class="operator btn btn-equal btn-hover-orange" id="result"
+                  onclick="audios()">=</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
